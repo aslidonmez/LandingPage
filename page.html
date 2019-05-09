@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Aslı Dönmez Web Page</title>
+    
+    <script src="js/jquery.js"></script>
+	<script src="js/stickUp.js"></script>
+
+    <link rel='stylesheet' href='../wp-content/themes/sparkling/inc/css/font-awesome.min.css?ver=3.8.4' type='text/css' media='all' />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+        nav {
+            background: #f5b335;
+            height: 60px;
+            position: fixed;
+            top: 0;
+            transition: top 0.2s ease-in-out;
+            width: 100%;
+        }
+        .nav-up {
+            top: -60px;
+        }
+    </style>
+	<script>
+	    var looper;
+	    var degrees = 0;
+	    function rotateAnimation(el, speed) {
+	        var elem = document.getElementById(el);
+	        if (navigator.userAgent.match("Chrome")) {
+	            elem.style.WebkitTransform = "rotate(" + degrees + "deg)";
+	        } else if (navigator.userAgent.match("Firefox")) {
+	            elem.style.MozTransform = "rotate(" + degrees + "deg)";
+	        } else if (navigator.userAgent.match("MSIE")) {
+	            elem.style.msTransform = "rotate(" + degrees + "deg)";
+	        } else if (navigator.userAgent.match("Opera")) {
+	            elem.style.OTransform = "rotate(" + degrees + "deg)";
+	        } else {
+	            elem.style.transform = "rotate(" + degrees + "deg)";
+	        }
+	        looper = setTimeout('rotateAnimation(\'' + el + '\',' + speed + ')', speed);
+	        degrees++;
+	        if (degrees > 359) {
+	            degrees = 1;
+	        }
+	        document.getElementById("status").innerHTML = "rotate(" + degrees + "deg)";
+	    }
+	</script>
+</head>
+<body>
+    <div class="container">
+		
+		<div class="row">
+          <!-- NAVBAR -->
+          <nav class="navbar nav-down navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Menü</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Oyun Haber Web Sayfası</a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Anasayfa</a></li>
+                  <li><a href="#">Hakkımızda</a></li>
+                  <li><a href="#">İletişim</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- NAVBAR BİTTİ -->
+            <!-- HEADER -->
+		  <div class="col-xs-12 col-md-12" style="padding:0 0 10px 0;"><img src="pic1.png" class="img-fluid" /></div>
+            <!-- HEADER BİTTİ -->
+		</div>
+        <div class="row">
+            <!-- CONTENT YAZI KISMI -->
+          <div class="col-xs-12 col-md-12">
+              <h1 style="text-align:center;">Pokemon Go çılgınlığı: Twitter’ı geçti sırada Snapchat var!</h1>
+              <h4>Çılgınlık zirveye çıktı. Pokemon Go çok kısa bir süre içerisinde yılların sosyal medya devlerini geride bıraktı.</h4>
+              <p>Pokemon çılgınlığı son sürat devam ediyor. Şimdi sizinle paylaşacağımız veriler, çılgınlığın ne kadar çabuk yayıldığını ortaya koyuyor.
+                 Aşağıdaki grafik, geçen hafta Andoridlerde Pokemon Go oyanayanların sayısının Twitter ve Candy Crush’ı geçtiğini gösteriyor. 12 milyona yaklaşan aktif kullanıcı sayısı ile sıradaki rakipleri Google Maps ve Snapchat.</p>
+              <p>Pokemon Go’nun yalnızca kullanıcı sayısı artmıyor. Sensor Tower verilerine göre uygulamada kalma süresi rakiplerini sollamış durumda. Buna göre Pokemon Go’da ortalama kalma süresi 33 dakika 25 saniye. En yakın rakibi Facebook’un 22 dakika 20 saniye, Snapchat’in 18 dakika 7 saniye.</p>
+		  </div>
+        </div>
+		<br/>
+            <!-- CONTENT YAZI KISMI BİTTİ -->
+		    <!-- CONTENT 3 RESİM -->
+		<div class="row">   
+		  <div class="col-xs-4 col-md-4"><img src="pic2.png" class="img-fluid" /></div>
+          <div class="col-xs-4 col-md-4"><img src="pic4.png" class="img-fluid" /></div>
+          <div class="col-xs-4 col-md-4"><img src="pic5.png" class="img-fluid" /></div>
+		</div>
+            <!-- CONTENT 3 RESİM BİTTİ -->
+        <hr />
+		<div class="row">
+            <!-- CONTENT SOL DİV YAZI -->
+		  <div class="col-xs-12 col-md-8">
+              <p>Piyasalar balon şişirirken Lale Devri’nden beri bu duruma tarihsel olarak her zaman garip olayların eşlik ettiği görülmüştür. Tam da negatif faizlerin giderek derinleştiği, yatırımcıların tahvil ve hisseyi birbirine karıştırarak, getiri için yüksek temettülü hisse, trading kazancı için tahvil aldığı şu dönemde dünya çok ilginç bir akıma kapıldı: <b>Pokémon Go.</b></p>
+		      <p>Konu hakkında kısaca bilgi verelim. Pokémon 1990’lı yıllara damgasını vuran bir anime. Animenin ana karakteri Ash Ketchum ve “esas pokémon” pikachu ile kötü karakterler “Roket takımı” arasında geçen hikaye tüm dünyayı özellikle de Türkiye’yi kasıp kavurdu. Bir dönem gazete manşetleri 7-8 yaşındaki çocukların intiharları ve işledikleri cinayetlerle doluydu. 7 yaşında bir çocuk pokémon tasolarıyla oynarken çıkan kavgada arkadaş katili olmuştu. Yine aynı tarihlerde 4 yaşında bir çocuk kendini Pikachu sanarak 7. kattaki evinin balkonundan atlamış ve 21 metre uçmuştu.</p>
+              <h2>Pokémon öldürmeye mi programlı?</h2>
+              <p>Tüm dünyada, özellikle de oyunun anavatanı Japonya’da birçok benzer olay yaşandı. Korkunç tarafı, bu olaylarda kasıt olabileceği söylentisi. Programcıların çocukları intihara sevk etmek için çalınan bazı müziklere bir kod yerleştirmiş olabileceği söylentisi halen sıcak bir konu. (Lavender Town Sendromu)</p>
+          </div>
+            <!-- CONTENT SOL DİV YAZI BİTTİ -->
+            <!-- CONTENT SAĞ DİV JAVASCRİPT -->
+		  <div class="col-xs-12 col-md-4">
+              <img id="img1" src="pic3.png" class="img-fluid" />
+		      <script>rotateAnimation("img1", 30);</script>
+          </div>
+            <!-- CONTENT SAĞ DİV JAVASCRİPT BİTTİ -->
+		</div>
+        <hr />
+            <!-- FOOTER -->
+        <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <p class="pull-right"><a href="#">Başa Dön</a></p>
+                    <p>&copy; 2019 Aslı Dönmez</p>
+
+                </div>
+
+        </div>
+	</div>
+</body>
+</html>
